@@ -1,0 +1,10 @@
+<script>
+	var deposit = +prompt("Input a deposit sum");
+	var percent = parseFloat(prompt("Input an annual percentage rate")) / 100;
+
+	for (var year = 1 ; year <= 5; year++) {
+		deposit = deposit + (deposit * percent);
+		document.write("Year " + year + ": ");
+		document.write(deposit.toFixed(2) + "<br>");
+	}
+</script>

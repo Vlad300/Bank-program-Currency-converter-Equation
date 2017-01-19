@@ -1,0 +1,19 @@
+<script>
+	var a = 2
+	var b = -1
+	var c = 4
+
+	alert("The equation is y = 2x^2 - x + 4")
+	var change = prompt("Do you desire to change a, b and c?")
+	if (change == "yes" || change == "Yes" || change == "YES") {
+		alert("The equation template is y = a*x^2 + b*x + c")
+		a = +prompt("Input a")
+		b = +prompt("Input b")
+		c = +prompt("Input c")
+	}
+	var x = +prompt("Input x in order to solve the equation")
+
+	var y = a*(x*x) + b + c
+
+	alert("If x = " + x + " y = " + y)
+</script>
